@@ -12,7 +12,7 @@ namespace GamisignmentDll.Managers
     {
         public List<Repeat> Read()
         {
-            using (var db = new GamisignmentContext())
+            using (var db = new GamiSignmentContext())
             {
                 return db.Repeats.ToList();
             }
@@ -20,7 +20,7 @@ namespace GamisignmentDll.Managers
 
         public Repeat Read(int id)
         {
-            using (var db = new GamisignmentContext())
+            using (var db = new GamiSignmentContext())
             {
                 return db.Repeats.FirstOrDefault(x => x.Id == id);
             }
@@ -28,7 +28,7 @@ namespace GamisignmentDll.Managers
 
         public Repeat Create(Repeat t)
         {
-            using (var db = new GamisignmentContext())
+            using (var db = new GamiSignmentContext())
             {
                 db.Repeats.Add(t);
                 db.SaveChanges();
@@ -38,7 +38,7 @@ namespace GamisignmentDll.Managers
 
         public Repeat Update(Repeat t)
         {
-            using (var db = new GamisignmentContext())
+            using (var db = new GamiSignmentContext())
             {
                 //3. Mark entity as modified
                 db.Entry(t).State = System.Data.Entity.EntityState.Modified;
@@ -51,7 +51,7 @@ namespace GamisignmentDll.Managers
 
         public bool Delete(int id)
         {
-            using (var db = new GamisignmentContext())
+            using (var db = new GamiSignmentContext())
             {
                 var delete = db.Repeats.FirstOrDefault(x => x.Id == id);
                 db.Entry(delete).State = System.Data.Entity.EntityState.Deleted;

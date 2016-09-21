@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,12 +39,23 @@ namespace GamisignmentDll.Managers
 
         public Prize Update(Prize t)
         {
-            throw new NotImplementedException();
+            using (var db = new GamiSignmentContext())
+            {
+                db.Entry(t).State = EntityState.Modified;
+                db.SaveChanges();
+                return t;
+            }
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var db = new GamiSignmentContext())
+            {
+                var prize = Read(id);
+                db.Entry(prize).State = System.Data.Entity.EntityState.Deleted;
+                db.SaveChanges();
+                return Read(id) == null;
+            }
         }
     }
 }

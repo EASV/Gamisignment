@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BBD4C332-DFEB-4B95-B367-503D2B85AC12}</ProjectGuid>
+    <ProjectGuid>{F0A42256-5E0C-4F21-9DF4-E4BA187B8685}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GamiSignmentAdmin</RootNamespace>
-    <AssemblyName>GamiSignmentAdmin</AssemblyName>
+    <RootNamespace>GamisignmentAdminWeb</RootNamespace>
+    <AssemblyName>GamisignmentAdminWeb</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ApplicationInsightsResourceId>/subscriptions/cf86b3d9-53f1-4ee4-9bd5-9b4b9e39e69f/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/GamiSignmentAdmin</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/cf86b3d9-53f1-4ee4-9bd5-9b4b9e39e69f/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/GamisignmentAdminWeb</ApplicationInsightsResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -158,9 +158,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PrizesController.cs" />
-    <Compile Include="Controllers\RepeatsController.cs" />
-    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,21 +204,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="Views\Repeats\Create.cshtml" />
-    <Content Include="Views\Repeats\Delete.cshtml" />
-    <Content Include="Views\Repeats\Details.cshtml" />
-    <Content Include="Views\Repeats\Edit.cshtml" />
-    <Content Include="Views\Repeats\Index.cshtml" />
-    <Content Include="Views\Users\Create.cshtml" />
-    <Content Include="Views\Users\Delete.cshtml" />
-    <Content Include="Views\Users\Details.cshtml" />
-    <Content Include="Views\Users\Edit.cshtml" />
-    <Content Include="Views\Users\Index.cshtml" />
-    <Content Include="Views\Prizes\Create.cshtml" />
-    <Content Include="Views\Prizes\Delete.cshtml" />
-    <Content Include="Views\Prizes\Details.cshtml" />
-    <Content Include="Views\Prizes\Edit.cshtml" />
-    <Content Include="Views\Prizes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,9 +242,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1812</DevelopmentServerPort>
+          <DevelopmentServerPort>4453</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1812/</IISUrl>
+          <IISUrl>http://localhost:4453/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

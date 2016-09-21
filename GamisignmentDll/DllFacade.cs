@@ -18,7 +18,7 @@ namespace GamisignmentDll
 
         public IManager<Prize> GetPrizeManager()
         {
-            return new PrizeListManager();
+            return new PrizeManager();
         }
     }
 }

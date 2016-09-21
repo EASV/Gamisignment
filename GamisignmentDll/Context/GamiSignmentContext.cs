@@ -12,7 +12,7 @@ namespace GamisignmentDll.Context
     {
         public GamiSignmentContext() : base()
         {
-            
+            Database.SetInitializer(new GamiDbInitializer());
         }
 
         public DbSet<User> Users { get; set; }

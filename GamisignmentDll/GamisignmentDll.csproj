@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\GamiDBInitializer.cs" />
     <Compile Include="Context\GamisignmentContext.cs" />
     <Compile Include="DllFacade.cs" />
     <Compile Include="Entities\AbstractEntity.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="IManager.cs" />
     <Compile Include="Managers\AbstractListManager.cs" />
     <Compile Include="Managers\PrizeListManager.cs" />
+    <Compile Include="Managers\PrizeManager.cs" />
     <Compile Include="Managers\RepeatListManager.cs" />
     <Compile Include="Managers\RepeatManager.cs" />
     <Compile Include="Managers\UserListManager.cs" />
